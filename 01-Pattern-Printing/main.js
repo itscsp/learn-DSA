@@ -130,17 +130,17 @@
         *****    
      */
     
-        function pattern06(rows) {
-            for (let i = 1; i <= rows; i++) {
+        function pattern06(n) {
+            for (let row = 1; row <= n; row++) {
                 let pattern = '';
                 
                 // Add spaces
-                for (let j = 1; j <= rows - i; j++) {
+                for (let spaceCol = 1; spaceCol <= n - row; spaceCol++) {
                     pattern += ' ';
                 }
                 
                 // Add stars
-                for (let k = 1; k <= i; k++) {
+                for (let star = 1; star <= row; star++) {
                     pattern += '*';
                 }
                 
@@ -148,8 +148,37 @@
             }
         }
         
-
+        
+        // pattern06(5)
+        
+    
+    /**
+     Pattern Number 7:
+     7. *****
+        ****
+        ***
+        **
+        *   
+     */
+    
+        function pattern07(n) {
+            for (let row = 1; row <= n; row++) {
+                let pattern = '';
+                
+                // Add spaces
+                for (let spaceCol = 1; spaceCol <= n - row; spaceCol++) {
+                    pattern += ' ';
+                }
+                
+                // Add stars
+                for (let star = 1; star <= row; star++) {
+                    pattern += '*';
+                }
+                
+                console.log(pattern);
+            }
+        }
         
         
-        pattern06(5)
+        pattern07(5)
         

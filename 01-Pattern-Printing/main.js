@@ -228,18 +228,58 @@
      */
     
       function pattern09(n) {
-        let pattern = "pattern"
-        // for (let row = 0; row <= n; row++) {
+        let pattern = ""
+        for (let row = n-1; row > -1; row--) {
+
+            let totalColsInRow = 2*row+1
+            let noOfSpaces = n - row
             
-        //     for(col = n; col > row; col++){
-        //         pattern += col
-        //     }
-        //     pattern += "\n"
+            for(let space = 0; space < noOfSpaces-1; space++){
+                pattern += " "
+            }
+            for(let col = totalColsInRow; col > 0; col--){
+                pattern += "*"
+            }
+            
+            pattern += "\n"
 
 
-        // }
+        }
         console.log(pattern)
     }
     
     
-    pattern09(5)
+    // pattern09(5)
+
+        /**
+     Pattern Number 10:
+     10.   
+        * * * * * 
+         * * * *
+          * * *
+           * *
+            *
+     */
+    
+           function pattern10(n) {
+            let pattern = ""
+            for (let row = n; row > -1; row--) {
+    
+                let noOfSpaces = n - row
+                
+                for(let space = 0; space < noOfSpaces; space++){
+                    pattern += " "
+                }
+                for(let col = row; col > 0; col--){
+                    pattern += " * "
+                }
+                
+                pattern += "\n"
+    
+    
+            }
+            console.log(pattern)
+        }
+        
+        
+        pattern10(5)

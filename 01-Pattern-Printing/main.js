@@ -180,5 +180,66 @@
         }
         
         
-        pattern07(5)
+        // pattern07(5)
         
+
+        /**
+     Pattern Number 8:
+     8.   *
+         ***
+        *****
+       *******
+      ********* 
+     */
+    
+        function pattern08(n) {
+            let pattern = ""
+            for (let row = 0; row < n; row++) {
+                let totalColsInRow = 2*row+1;
+                let noOfSpcaes = n-row-1;
+
+                for(let s=0; s<noOfSpcaes; s++) {
+                    pattern += " "
+                }
+
+                for(let col = 0; col<totalColsInRow; col++){
+                    pattern += "*"
+                    
+                }
+                pattern += "\n"
+
+
+            }
+            console.log(pattern)
+        }
+        
+        
+        // pattern08(5)
+
+
+        /**
+     Pattern Number 9:
+     9.   
+        ********* 
+         *******
+          *****
+           ***
+            *
+     */
+    
+      function pattern09(n) {
+        let pattern = "pattern"
+        // for (let row = 0; row <= n; row++) {
+            
+        //     for(col = n; col > row; col++){
+        //         pattern += col
+        //     }
+        //     pattern += "\n"
+
+
+        // }
+        console.log(pattern)
+    }
+    
+    
+    pattern09(5)

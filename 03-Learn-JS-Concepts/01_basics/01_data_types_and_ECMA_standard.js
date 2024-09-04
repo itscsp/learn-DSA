@@ -11,5 +11,5 @@ console.log(i_am_variable, "| My Type:", typeof i_am_variable)
 /**
  * JS ia weakly type language
  * Which mean user can assign any value to variable. any variable can be assigned (and re-assigned) values of all types
- * 
+ * Read More: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
  */

@@ -1,5 +1,6 @@
 /**
  * Type conversion in JS
+ * ECMA Docs: https://tc39.es/ecma262/
  */
 
 let score = "33"

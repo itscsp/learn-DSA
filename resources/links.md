@@ -2,3 +2,9 @@
 ### [Practice Questions by Apna Collage](https://docs.google.com/spreadsheets/d/1hXserPuxVoWMG9Hs7y8wVdRCJTcj3xMBAEYUOXQ5Xag/edit?gid=0#gid=0)
 
 ---
+# JS Books
+- ### [Up & Going](https://blog.chethanspoojary.com/wp-content/uploads/2024/09/learn-DSA-JS-Resource-Book-01.pdf)
+- ### [Scope & Closures](https://blog.chethanspoojary.com/wp-content/uploads/2024/09/learn-DSA-JS-Resource-Book-01.pdf)
+- ### [This & Object Prototypes](https://blog.chethanspoojary.com/wp-content/uploads/2024/09/learn-DSA-JS-Resource-Book-03.pdf)
+- ### [Types & Grmmar](https://blog.chethanspoojary.com/wp-content/uploads/2024/09/learn-DSA-JS-Resource-Book-04pdf)
+- ### [Async & Performance](https://blog.chethanspoojary.com/wp-content/uploads/2024/09/learn-DSA-JS-Resource-Book-05pdf)

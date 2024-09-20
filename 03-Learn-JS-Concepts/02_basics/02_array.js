@@ -3,7 +3,7 @@ const dc_heros = ["Super man", "bathman", "flash"]
 
 //This is not best pratice to merge array
 
-// marvel_heros.push(dc_heros); // [ 'Thor', 'Iron Man',  'Spiderman', [ 'Super man', 'bathman', 'flash' ]
+marvel_heros.push(dc_heros); // [ 'Thor', 'Iron Man',  'Spiderman', [ 'Super man', 'bathman', 'flash' ]
 // console.log(marvel_heros);
 
 // let all_heros = marvel_heros.concat(dc_heros)

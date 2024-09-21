@@ -56,7 +56,19 @@ const users = [
 
 //Some methonds in objects
 
-console.log(Object.keys(newObject)); //return object keys
-console.log(Object.values(newObject)); // return object values
-console.log(Object.entries(newObject)); // return object key and value as array
-console.log(newObject.hasOwnProperty('isLoggedIn')); // check property exists or not
+// console.log(Object.keys(newObject)); //return object keys
+// console.log(Object.values(newObject)); // return object values
+// console.log(Object.entries(newObject)); // return object key and value as array
+// console.log(newObject.hasOwnProperty('isLoggedIn')); // check property exists or not
+
+const course = {
+    coursename: "js in learning",
+    price: "999",
+    courseInstructor: "ABCD"
+}
+
+// course.courseInstructor
+const {courseInstructor:teacher} = course 
+
+console.log(teacher)
+

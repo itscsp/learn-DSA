@@ -1,7 +1,12 @@
 # Links
 ### [Practice Questions by Apna Collage](https://docs.google.com/spreadsheets/d/1hXserPuxVoWMG9Hs7y8wVdRCJTcj3xMBAEYUOXQ5Xag/edit?gid=0#gid=0)
 
+
+# DSA Leaning Resource(Youtube Video)
+- ### [Link](https://github.com/FrontendFreaks/DSA-in-JavaScript/blob/main/Basics/README.md)
+
 ---
+
 
 # JS Tutorial
 - ### [Chai Aur JS](https://github.com/hiteshchoudhary/js-hindi-youtube)

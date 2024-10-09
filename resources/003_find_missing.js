@@ -7,21 +7,35 @@
 
 function findMissing(number){
     let numberTotal = 0
-    let total = 1
-    
+    let total = 0
+    // Find big number in given seris
+    let max = number[0]
+
     number.forEach((element, index) => {
-        numberTotal +=element; 
-        total = total + index
-        console.log(index)
+        if(element > max){
+            max = element
+        }
+        numberTotal = numberTotal + element;
     });
 
-    // for(let i = 0; i < number.length; i++){
-    //     console.log(number[i] + number[i+1])
+    total = max*(max+1)/2
 
-    // }
-    console.log(numberTotal);
-    console.log(total);
+    console.log("Missing: ", total - numberTotal);
 
 }
 
-findMissing([3, 0, 4, 1, 5])
+findMissing([0, 1, 2,3,4,6,7, 8, 9])
+
+//Optimized solution
+
+function findMissing2(nums) {
+    let sum = 0;
+
+    for (let index = 0; index < nums.length; index++) {
+        sum += nums[index];
+    }
+
+    return nums.length*(nums.length+1) /2 - sum;
+}
+
+console.log(findMissing2([0, 1, 2,3,4,6,7, 8, 9]));

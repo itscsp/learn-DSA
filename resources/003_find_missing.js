@@ -30,12 +30,14 @@ findMissing([0, 1, 2,3,4,6,7, 8, 9])
 
 function findMissing2(nums) {
     let sum = 0;
+    // return nums.length*(nums.length+1) /2 - nums.reduce((acc, num) => num + acc);
 
     for (let index = 0; index < nums.length; index++) {
         sum += nums[index];
     }
 
     return nums.length*(nums.length+1) /2 - sum;
+
 }
 
 console.log(findMissing2([0, 1, 2,3,4,6,7, 8, 9]));

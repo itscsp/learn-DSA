@@ -51,3 +51,23 @@ console.log(findElementIndex(arr, element)) // 5
 console.log(arr.indexOf(element)) // 5
 
 console.log(findElementIndex(arr, 100)) // false
+
+
+// How to delete, add & update element from specific index
+
+console.log("Array:", arr);
+// Delete
+arr.splice(1, 3) // this will delete from arr[1] to arr[3]
+console.log("Updated Array After Delete:", arr);
+// ADD
+arr.splice(1, 0, 9, 8, 7, 6)
+console.log("Updated Array After Add:", arr);
+
+// UPDATE
+arr.splice(1, 3, 99, 88, 66)
+console.log("Updated Array After Update:", arr);
+
+
+// Splice vs slice
+let subArr = arr.slice(1, 4) // 4th index excluded
+console.log("Slice",subArr)

@@ -95,3 +95,7 @@ let sumOfArray = reducerArray.reduce((acc, curr) =>  curr + acc, 0)
 let nestedArray = [1, 2, 3, [4, [5, [6]], 7], 8, 9]
 let flatendArray = nestedArray.flat(Infinity)
 console.log(flatendArray)
+
+// Filter and find
+let findNumber = filterArray.find((ele) => ele > 0)
+console.log(findNumber)

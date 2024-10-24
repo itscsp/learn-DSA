@@ -1,52 +1,21 @@
+const findPivotIndex = (nums) => {
+    const totalSum = nums.reduce((acc, num) => acc + num, 0);
+    let leftSum = 0;
 
-const findPivotIndex = (nums = [1, 7, 3, 6, 5, 6]) => {
+    for (let i = 0; i < nums.length; i++) {
+        // rightSum is totalSum - leftSum - current element
+        const rightSum = totalSum - leftSum - nums[i];
 
-    
-    nums.forEach((item, indx) => {
-        let leftSum = 0
-        let rightSum = 0
-        for(let i = indx; i < nums.length; i++){
-
-            
-            if(indx === i){
-                continue
-            }
-            console.log("index", indx, "i", i)
-            
-                // if(i < nums.length){
-                    rightSum += nums[i]
-                // } 
-                // console.log(nums[i])
-            
+        if (leftSum === rightSum) {
+            return i; // Return the pivot index
         }
-console.log('--------------------------------')
-        for(let i = indx; i >= 0; i--){
-            if(indx === i){
-                continue
-            }
-            // if(i === indx){
-            //     continue;
-            // }
-            // if(i < nums.length){
-                leftSum += Number(nums[i])
-            // } 
-            console.log(nums[i])
-        
+
+        leftSum += nums[i]; // Update leftSum for the next iteration
     }
-    console.log('****')
 
+    return -1; // Return -1 if no pivot index is found
+};
 
-       
-
-        if(rightSum === leftSum){
-            console.log(rightSum)
-            console.log(leftSum)
-
-            // console.log(indx)
-        }
-
-
-
-    })
-}
-findPivotIndex()
+// Example usage
+const pivotIndex = findPivotIndex([1, 7, 3, 6, 5, 6]);
+console.log(pivotIndex); // Output: 3

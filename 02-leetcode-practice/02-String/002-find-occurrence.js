@@ -3,9 +3,8 @@ Given two strings needle and haystack, return the index of the first occurrence 
 */
 //Brute force
 var strStr = function(haystack = "hello", needle = "ll") {
-    let exist = false
-    let index = 0
 
+    let index = 0
     //   console.log(haystack.search(needle));  
     for(let i=0; i < haystack.length; i++){
         let value = ''
@@ -16,15 +15,11 @@ var strStr = function(haystack = "hello", needle = "ll") {
 
         if(value == needle){
             index = haystack.indexOf(value);
-            exist = true
+            return index;
         }
     }
-
-    if(exist){
-        return index
-    } else {
-        return -1
-    }
+    return -1
+    
 };
 
 //Optimised solution

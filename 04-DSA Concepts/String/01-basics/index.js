@@ -41,7 +41,7 @@ console.log(str.indexOf("world")); // 6 (first occurrence)
 console.log(str.lastIndexOf("world")); // 13 (last occurrence)
 
 // Compare two strings
-let anotherName = 'ZZZ'
+let anotherName = '    Z  Z Z    '
 console.log(userName.localeCompare(anotherName)) // -1
 
 // Replace S with Shanthappa
@@ -54,5 +54,20 @@ console.log(newName.slice(-7, -1)) // Poojar
 console.log(newName.search("Chethan")) // 0
 
 // Return substring array
-console.log(newName.split(" ")) // [ 'Chethan', 'Shanthappa', 'Poojary' ]
+console.log(newName.split("")) // [ 'Chethan', 'Shanthappa', 'Poojary' ]
+let subString = newName.split("")
+
+// Join the array into string
+console.log(subString.join("")) // Chethan Shanthappa Poojary
+
+//Find start and end of the string.
+console.log(newName.startsWith("Chethan"))
+console.log(newName.endsWith("Poojary"))
+
+// How to remove white space in string
+console.log(anotherName.length) // 14
+let trimStr = anotherName.trimEnd() // It remove only starting and ending white space
+console.log(trimStr, trimStr.length) // 6
+
+
 

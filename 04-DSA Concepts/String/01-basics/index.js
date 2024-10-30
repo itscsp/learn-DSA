@@ -39,3 +39,20 @@ for(let i = 0; i < userName.length; i++) {
 const str = "Hello, world! world!";
 console.log(str.indexOf("world")); // 6 (first occurrence)
 console.log(str.lastIndexOf("world")); // 13 (last occurrence)
+
+// Compare two strings
+let anotherName = 'ZZZ'
+console.log(userName.localeCompare(anotherName)) // -1
+
+// Replace S with Shanthappa
+let newName = userName.replace("S", "Shanthappa")
+console.log(newName)
+
+// Get part of the string
+console.log(newName.substring(8, 18)) // Shanthappa
+console.log(newName.slice(-7, -1)) // Poojar
+console.log(newName.search("Chethan")) // 0
+
+// Return substring array
+console.log(newName.split(" ")) // [ 'Chethan', 'Shanthappa', 'Poojary' ]
+

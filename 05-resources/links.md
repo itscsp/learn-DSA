@@ -4,6 +4,7 @@
 
 # DSA Leaning Resource(Youtube Video)
 - ### [Link](https://github.com/FrontendFreaks/DSA-in-JavaScript/blob/main/Basics/README.md)
+- ### [Git repo](https://github.com/FrontendFreaks/DSA-in-JavaScript)
 
 ---
 

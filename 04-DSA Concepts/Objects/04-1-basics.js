@@ -39,5 +39,6 @@ function looper(obj){
     
     looper(obj.next)
 }
+
 looper(data)
 console.log(playerCounter)

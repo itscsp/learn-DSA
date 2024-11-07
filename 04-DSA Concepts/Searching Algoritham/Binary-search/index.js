@@ -38,11 +38,11 @@ function binarySearchUsingRecur(items, target, start, end) {
     if(items[mid] === target){
         return mid;
     } else if(arr[mid] > target) {
-        return binarySearchUsingRecur(arr, target, start, end, mid-1);
+        return binarySearchUsingRecur(arr, target, start, mid-1);
     } else {
         return binarySearchUsingRecur(arr, target, mid+1,end);
     }
 }
 
 
-console.log(arr[BinarySearchRecur(arr, 90)])
+console.log(arr[BinarySearchRecur(arr, 11)])

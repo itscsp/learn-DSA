@@ -3,43 +3,27 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    let parenthesis = []
+    let stack = []
 
-    let parenthesisArray = s.split('')
-    parenthesisArray.forEach((item) => {
-        
-        if(item == '(' || item == '['|| item == '{'){
-            parenthesis.push(item)
-        }
-        
-        if(item == ')'){
-            if(parenthesis.find(el => el > 0)){
-                parenthesis.pop("(")
+    let bracketsMap = {
+        ')' : '(',
+        '}' : '{',
+        ']' : '[',
+    }
+
+    for(let char of s){
+        console.log(char)
+
+        if(bracketsMap[char]){
+            let topElement = stack.pop()
+
+            if(topElement !== bracketsMap[char]){
+                return false
             }
         } else {
-            return false;
+            stack.push(char)
         }
-        
-        if(item == '}'){
-            if(parenthesis.find(el => el > 0)){
-                parenthesis.pop('(')
-            }
-        } else {
-            return false;
-        }
-        
-        if(item == ']'){
-            if(parenthesis.find(el => el > 0)){
-                parenthesis.pop("(")
-            }
-        } else {
-            return false;
-        }
-        
-        console.log(parenthesis)
-        return true
-    })
-    
+    }
+
+    return stack.length === 0;
 };
-
-console.log(isValid('()'))

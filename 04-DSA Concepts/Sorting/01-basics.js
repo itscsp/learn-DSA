@@ -14,3 +14,20 @@ console.log(strArr.sort()) //[ 'Apple', 'Mango', 'mango' ]
 
 // Inbuilt function 
 // arr.sort()
+
+let unSortedArr = [3, 1, 8, 7, 2, 20]
+
+for(let i = 0; i < unSortedArr.length; i++){
+    let min = i
+    for(let j = i+1; j <= unSortedArr.length-1; j++){
+        if(unSortedArr[min] > unSortedArr[j]){
+            min = j
+        }
+    }
+    let temp = unSortedArr[i];
+    unSortedArr[i] = unSortedArr[min]
+    unSortedArr[min] = temp
+}
+
+console.log(unSortedArr)
+console.log(unSortedArr.sort((a, b) => a-b)) //[ 'Apple', 'Mango', 'mango' ]

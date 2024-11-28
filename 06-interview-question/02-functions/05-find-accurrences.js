@@ -6,18 +6,16 @@ function findAccurrences(string){
     let trimedSting = string.trim();
     let letterCounter = {};
 
-        for(let i=0; i<trimedSting.length; i++){
-            if(trimedSting[i] != " "){
-                if(letterCounter[item]){
-                    letterCounter[item] = letterCounter[item]+1; 
-                } else {
-                    letterCounter[item] = 1;
-                }
+    for(let i=0; i<trimedSting.length; i++){
+        if(trimedSting[i] != " "){
+            if(letterCounter[trimedSting[i]]){
+                letterCounter[trimedSting[i]] = letterCounter[trimedSting[i]]+1; 
+            } else {
+                letterCounter[trimedSting[i]] = 1;
             }
         }
+    }
        
-    
-
     console.log(letterCounter)
 }
 
